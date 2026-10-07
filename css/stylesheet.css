@@ -1,0 +1,42 @@
+:root {
+  --colore-primario: #2a6f97;
+  --colore-secondario: #f4a261;
+  --colore-sfondo: #fafafa;
+  --colore-testo: #222;
+
+  --font-titoli: "Georgia", serif;
+  --font-testo: "Arial", sans-serif;
+}
+
+nav {
+  background: var(--colore-primario);
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--colore-secondario);
+  text-decoration: underline;
+}
+
+.sponsor-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--colore-sfondo);
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
