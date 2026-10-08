@@ -6,5 +6,5 @@
 	- roster dei giocatori,
 	- calendario incontri,
 	- catalogo merchandising,
-	-  contatti, 
+	- contatti, 
 	- sponsor.
