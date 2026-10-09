@@ -8,11 +8,20 @@
   --font-testo: "Arial", sans-serif;
 }
 
+body {
+  font-family: var(--font-testo);
+  background-color: var(--colore-sfondo);
+  color: var(--colore-testo);
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   background: var(--colore-primario);
   display: flex;
   gap: 20px;
   padding: 15px;
+  color: white;
 }
 
 nav a {
@@ -38,5 +47,106 @@ nav a:hover {
   margin: 0 auto;
   padding: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colore-primario);
 }
 
+a > span {
+  color: white;
+  font-family: var(--font-titoli);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a > span:hover {
+  color: var(--colore-secondario);
+  text-decoration: underline;
+}
+
+.shop-button {
+  background-color: var(--colore-secondario);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-titoli);
+  font-weight: bold;
+}
+
+.shop-button:hover {
+  transform: scale(1.05);
+}
+
+.main-logo {
+    display: block;
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--colore-primario);
+    text-transform: uppercase;
+    color: white;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.roster-content {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.card {
+      background-color: white;
+      border: 3px solid gray;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+      vertical-align: top;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+      font-family: var(--font-titoli);
+      color: var(--colore-primario);
+      margin-top: 0;
+      font-weight: bold;
+}
+
+.main-text{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
